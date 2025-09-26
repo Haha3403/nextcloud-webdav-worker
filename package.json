@@ -1,17 +1,12 @@
 {
-  "name": "nextcloud-webdav-proxy",
+  "name": "my-proxy",
   "version": "1.0.0",
-  "private": true,
-  "description": "Proxy Worker for accessing Nextcloud WebDAV to solve CORS issues.",
-  "main": "index.js",
+  "main": "proxy.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node proxy.js"
   },
   "dependencies": {
-    "typescript": "^5.0.0"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230419.0",
-    "wrangler": "^3.0.0"
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
   }
 }
